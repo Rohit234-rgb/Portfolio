@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new prt.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Data.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#awards">Certificate</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst Trainee</p>
+                <h1>Hello, I'm <span> Rohit Ghodke</span><br> From India </h1>
+                <div class="d-flex align-items-center gap-3 mt-26">
+                    <a href="#projects" type="button" class="cta"></a>
+                    <a href="https://www.linkedin.com/in/rohit-ghodke-35668419a/" target="_blank"
+                        class="btn btn-icon-sm btn-round btn-linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://wa.me/7507944249" target="_blank" class="btn btn-icon-sm btn-round btn-whatsapp">
+                        <img src="images/icons8-whatsapp-30.png" alt="WhatsApp Logo"
+                            class="whatsapp-logo"><!-- WhatsApp logo icon --> <!-- "WA" text -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------about------------------------------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    <strong>"Hey there! I'm Rohit,</strong> and I'm on a mission to become a top-notch Data Analyst.
+                    Yep, I've got a mechanical engineering
+                    degree, but guess what? I've found my true love in digging into data. <br />
+                    <br />
+                    I've got some cool skills under my belt – think
+                    Excel, SQL, and Power BI – all the tools I need to break down data like a champ. <br />
+                    <br />
+                    I've put my talents to work on real
+                    business projects, and you can check them out in my portfolio. From numbers to insights, I've got it
+                    covered. So, why
+                    the switch from mechanical engineering to data analysis? Simple – I've got a knack for spotting
+                    trends and making sense
+                    of numbers. Let's face it, data rules the world, and I'm here to make it work for businesses. <br />
+                    <br />
+                    Join me as I turn raw data
+                    into game-changing decisions. Let's dive into this data-filled adventure together!"
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analysis Tools</span><br>Proficiency in tools like Microsoft Excel, Google
+                            Sheets, or data analysis platforms</li>
+                        <li><span>Database Querying</span><br>Knowledge of SQL (Structured Query Language) for data
+                            retrieval and manipulation</li>
+                        <li><span>Data Visualization</span><br>create compelling data visualizations using tools like
+                            Power BI</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Data Analysis Trainee</span><br>Power BI visualizations in Different Projects annd
+                            Altreyx Experience</li>
+                        <li><span>SQL</span><br>Knowledge of SQL (Structured Query Language) for data retrieval and
+                            manipulation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2023</span><br>BE- Pimpri Chinchwad College of Engineering and Research</li>
+                        <li><span>2019</span><br>HSC-Bhartiya Jain Sanghatana</li>
+                        <li><span>2017</span><br>SSC-M.M.Vidyamandir</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------Services-------------------------->
+<div class="award-section" id="awards">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="porfolio-heading-center">
+                    <h2 class="main_title">Awards</h2>
+                    <p class="sub_title">& Certificate</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="certificate-row">
+            <div class="col-12 col-md-4 mb-24">
+                <div class="d-block text-center">
+                    <img class="img-fluid rounded-16"
+                        src="images/Alteryx_Foundational_Micro_Credential_Badge20230913-28-y8dofz_page-0001.jpg"
+                        sizes="(max-width: 370px) 370px" alt="CB Cert" />
+                    <p class="mt-10">
+                        Alteryx Foundational Micro Credential
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-24">
+                <div class="d-block text-center">
+                    <img class="img-fluid rounded-16" src="images/Coursera WJPYHB4J5NFT_page-0001.jpg" alt="CB Cert" />
+                    <p class="mt-10">
+                        Data Driven Decision with Power BI
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-24">
+                <div class="d-block text-center">
+                    <img srcset="images/Coursera XF5RF7NAZBUK_page-0001.jpg" sizes="(max-width: 370px) 370px,
+                    480px" src="images/Coursera XF5RF7NAZBUK_page-0001.jpg" class="img-fluid rounded-16" alt />
+                    <p class="mt-10">
+                        Foundation:Data,Data,Everywhere
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-24">
+                <div class="d-block text-center">
+                    <img class="img-fluid rounded-16" src="images/Coursera NA264XRY85R9_page-0001.jpg" alt="CB Cert" />
+                    <p class="mt-10">
+                        Design Thiniking for Innvoation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------Portfolio----------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/NeuomorphismDashbord.png" alt="Work 1">
+            </div>
+            <div class="work">
+                <img src="images/Screenshot 2023-09-14 223125.png" alt="Work 2">
+            </div>
+            <div class="work">
+                <img src="images/Screenshot 2023-09-14 225201.png" alt="Work 3">
+            </div>
+            <div class="work centered-work">
+                <img src="images/Onyx_page-0001.jpg " alt="Work 4">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------Contact-------------------------->
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                <div class="contact-info">
+                    <h1>Phoneㅤㅤㅤㅤ</h1>
+                    <h2>+91 7507944249ㅤㅤㅤㅤㅤㅤㅤㅤ </h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                <div class="contact-info">
+                    <h1>Emailㅤㅤㅤ</h1>
+                    <h2>rohitghodke001@gmail.comㅤㅤㅤㅤ</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                <div class="contact-info">
+                    <h1>Addressㅤㅤ</h1>
+                    <h2>Pimpri Chinchwad, Pune, Maharashtra</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+<html>
+<!------------------------------------------------------------------->
+<div class="row py-44 align-items-center">
+    <div class="col-12 col-md-6 mb-24 mb-md-0">
+        <div class="text-start">
+            <h5 class="fs-42 fw-800 text-white mb-12">Rohit Ghodke</h5>
+            <p class="mb-0 fs-24 fw-500 text-white">Data Analyst Trainee</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="text-lg-end text-start">
+            <h5 class="fs-24 fw-800 text-white mb-12 manrope"></h5>
+            <a href="https://files.codebasics.io/uploads/learner-portfolio/resumes/86933/64e61a7144c8f/6256faeb45.pdf"
+                target="_blank" class="btn btn-primary manrope shadow-none btn-sm fs-16">Resume<i
+                    class="bi bi-download ms-4"></i> </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {  // Change tablink to tabcontent
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+,
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+
+</html>
+<!-- End Header -->
+</body>
